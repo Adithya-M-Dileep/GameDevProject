@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 286936420533815995}
   - component: {fileID: -1291164379840280592}
   - component: {fileID: 1128406102364000112}
-  - component: {fileID: 6580499352375757348}
+  - component: {fileID: -4575493490514332277}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -664,7 +664,7 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &6580499352375757348
+--- !u!114 &-4575493490514332277
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -681,7 +681,7 @@ MonoBehaviour:
   prefixField: -1
   Synchronization: 3
   OwnershipTransfer: 0
-  observableSearch: 0
+  observableSearch: 2
   ObservedComponents:
   - {fileID: 1128406102364000112}
   sceneViewId: 0
