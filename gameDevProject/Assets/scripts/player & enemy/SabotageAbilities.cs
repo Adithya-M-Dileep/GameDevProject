@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class SabotageAbilities : MonoBehaviour
 {
@@ -8,20 +9,24 @@ public class SabotageAbilities : MonoBehaviour
     [SerializeField] int ability2Cost = 20;
     [SerializeField] int ability3Cost = 30;
 
-    //score scoreObj;
+    
     int current = 0;
-   // private void Start()
-   // {
-   //     scoreObj = GetComponent<score>();
-   // }
+
+    PhotonView pv;
+
+    private void Awake()
+    {
+        pv = GetComponent<PhotonView>();
+        //pv = PhotonView.Get(this);
+    }
     void Update()
     {
-        if (Input.GetKey(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if(score.currentScore >= ability1Cost)
             {
                 Debug.Log("Ability 1 activated");
-                //scoreObj.scoreDecrease(ability1Cost);
+                pv.RPC("ability1", RpcTarget.Others);
                 score.currentScore -= ability1Cost;
             }
             else
@@ -34,7 +39,7 @@ public class SabotageAbilities : MonoBehaviour
             if (score.currentScore >= ability2Cost)
             {
                 Debug.Log("Ability 2 activated");
-                //scoreObj.scoreDecrease(ability2Cost);
+                pv.RPC("ability2", RpcTarget.Others);
                 score.currentScore -= ability2Cost;
             }
             else
@@ -47,7 +52,7 @@ public class SabotageAbilities : MonoBehaviour
             if (score.currentScore >= ability3Cost)
             {
                 Debug.Log("Ability 3 activated");
-                //scoreObj.scoreDecrease(ability3Cost);
+                pv.RPC("ability3", RpcTarget.Others);
                 score.currentScore -= ability3Cost;
             }
             else
@@ -56,4 +61,24 @@ public class SabotageAbilities : MonoBehaviour
             }
         }
     }
+
+    [PunRPC]
+    void ability1()
+    {
+        Debug.Log("Ability 1 completed");
+        //sabotage abiltiy 1
+    }
+    [PunRPC]
+    void ability2()
+    {
+        Debug.Log("Ability 2 completed");
+        //sabotage abiltiy 1
+    }
+    [PunRPC]
+    void ability3()
+    {
+        Debug.Log("Ability 3 completed");
+        //sabotage abiltiy 1
+    }
+
 }

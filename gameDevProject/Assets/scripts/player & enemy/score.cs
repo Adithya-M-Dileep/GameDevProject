@@ -9,27 +9,6 @@ public class score : MonoBehaviour
     [SerializeField] TMP_Text scoreText;
     public static int currentScore = 0;
 
-    // private void Awake()
-    // {
-    //    if (Instance)
-    ///     {
-    //       Destroy(gameObject);
-    //        return;
-    //    }
-    //     DontDestroyOnLoad(gameObject);
-    //     Instance = this;
-    //}
-    //public void ScoreIncrease(int newScore)
-    //{
-    //    currentScore += newScore;
-    //     scoreText.text = currentScore.ToString();
-    //}
-
-    // public void scoreDecrease(int decreaseInScore)
-    // {
-    //    currentScore -= decreaseInScore;
-    //    scoreText.text = currentScore.ToString();
-    // }
 
     private void Update()
     {
