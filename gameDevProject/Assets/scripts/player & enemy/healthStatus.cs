@@ -9,7 +9,7 @@ public class healthStatus : MonoBehaviour
 
     float maxHealth = 100;
     public float currentHealth { get; private set; }
-
+    public float damagePerShot = 10f;
     void Awake()
     {
         currentHealth = maxHealth;
@@ -20,7 +20,12 @@ public class healthStatus : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
             takeDamage(10);
     }
-    public void takeDamage(int amount)
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "bullet")
+            takeDamage(damagePerShot);
+    }
+    public void takeDamage(float amount)
     {
         currentHealth -= amount;
         currentHealth = Mathf.Clamp(currentHealth, 0f, 100f);

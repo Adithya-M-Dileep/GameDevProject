@@ -17,15 +17,20 @@ public class enemyController : MonoBehaviour
     //Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked;
-    public GameObject projectile;
-    public Vector3 ProjectileOffset;
-    GameObject prebabProjectile;
+    //public GameObject projectile;
+    //public Vector3 ProjectileOffset;
+    //GameObject prebabProjectile;
 
     //States
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
 
-    
+    //shoot
+    public float fireRate = 1f;
+    public float fireCountDown = 0f;
+    public GameObject projectile;
+    public Transform firePoint;
+
 
     private void Awake()
     {
@@ -82,22 +87,22 @@ public class enemyController : MonoBehaviour
 
         transform.LookAt(target);
 
-        if (!alreadyAttacked)
-        {
-            ///Attack code here
-            prebabProjectile= (GameObject) Instantiate(projectile, transform.position + ProjectileOffset, Quaternion.identity);
-            Rigidbody rb = prebabProjectile.GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.AddForce(transform.up * 8f, ForceMode.Impulse);
-            ///End of attack code
-            Destroy(prebabProjectile, 2f);
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
-        }
+        if(fireCountDown<=0f)
+            {
+                Shoot();
+                fireCountDown = 1f / fireRate;
+            }
+
+        fireCountDown -= Time.deltaTime;
+        
     }
-    private void ResetAttack()
+
+    void Shoot()
     {
-        alreadyAttacked = false;
+       GameObject bulletG0=(GameObject) Instantiate(projectile, firePoint.position, firePoint.rotation);
+        bullet bullet = bulletG0.GetComponent<bullet>();
+        if (bullet != null)
+            bullet.seek(target);
     }
 
     private void OnDrawGizmosSelected()

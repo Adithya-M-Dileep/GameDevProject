@@ -337,6 +337,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1238584899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1238584900}
+  m_Layer: 0
+  m_Name: firePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1238584900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238584899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.474, z: 0.58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1305552577}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1305552572
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,12 +444,14 @@ MonoBehaviour:
   walkPoint: {x: 10, y: 0, z: 10}
   walkPointRange: 10
   timeBetweenAttacks: 2
-  projectile: {fileID: 460347257138652160, guid: 305e3d6f7623fb04490fa601ac70ac77, type: 3}
-  ProjectileOffset: {x: 0, y: 0.2, z: 0}
   sightRange: 15
   attackRange: 10
   playerInSightRange: 0
   playerInAttackRange: 0
+  fireRate: 1
+  fireCountDown: 0
+  projectile: {fileID: 7008106918865629305, guid: 305e3d6f7623fb04490fa601ac70ac77, type: 3}
+  firePoint: {fileID: 1238584900}
 --- !u!114 &1305552576
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -446,6 +478,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1440821703}
+  - {fileID: 1238584900}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6608,6 +6641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 8588194314770019092}
+  damagePerShot: 10
 --- !u!114 &8727740284427786612
 MonoBehaviour:
   m_ObjectHideFlags: 0
