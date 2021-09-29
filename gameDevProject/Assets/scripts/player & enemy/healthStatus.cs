@@ -10,6 +10,9 @@ public class healthStatus : MonoBehaviour
     float maxHealth = 100;
     public float currentHealth { get; private set; }
     public float damagePerShot = 10f;
+
+    [SerializeField] Transform spawnpoint;
+    [SerializeField] GameObject DeadUi;
     void Awake()
     {
         currentHealth = maxHealth;
@@ -31,12 +34,19 @@ public class healthStatus : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth, 0f, 100f);
         healthBar.fillAmount = currentHealth / maxHealth;
         if (currentHealth <= 0)
-            Die();
+        {
+            DeadUi.SetActive(true);
+            Invoke(nameof(Die), 5f);
+        } 
     }
 
     void Die()
     {
-        //respawn
+        DeadUi.SetActive(false);
+        currentHealth = 100;
+        healthBar.fillAmount = 1;
+        transform.position = spawnpoint.position;
+        Physics.SyncTransforms();
     }
 
 }
