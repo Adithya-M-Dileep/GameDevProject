@@ -31,7 +31,7 @@ public class enemyController : MonoBehaviour
     public GameObject projectile;
     public Transform firePoint;
 
-
+    
     private void Awake()
     {
         //target = playerManager.instance.player.transform;
