@@ -66,6 +66,7 @@ public class SabotageAbilities : MonoBehaviour
     void ability1()
     {
         Debug.Log("Ability 1 completed");
+        sabotage1 sabotage = GetComponent<sabotage1>();
         //sabotage abiltiy 1
     }
     [PunRPC]

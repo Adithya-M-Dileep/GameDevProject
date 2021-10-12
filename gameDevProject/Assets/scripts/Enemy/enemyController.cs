@@ -84,8 +84,8 @@ public class enemyController : MonoBehaviour
     {
         //Make sure enemy doesn't move
         agent.SetDestination(transform.position);
-
-        transform.LookAt(target);
+        Transform _target = target.GetChild(0).transform;
+        transform.LookAt(_target);
 
         if(fireCountDown<=0f)
             {
@@ -102,7 +102,7 @@ public class enemyController : MonoBehaviour
        GameObject bulletG0=(GameObject) Instantiate(projectile, firePoint.position, firePoint.rotation);
         bullet bullet = bulletG0.GetComponent<bullet>();
         if (bullet != null)
-            bullet.seek(target);
+            bullet.seek();
     }
 
     private void OnDrawGizmosSelected()

@@ -5,16 +5,15 @@ public class bullet : MonoBehaviour
     private Transform target;
     Rigidbody rb;
 
-    public float speed = 70f;
+    public float speed = 32f;
 
     public void Awake()
     {
         rb = gameObject.GetComponent<Rigidbody>();
     }
-    public void seek(Transform _target)
+    public void seek()
     {
-        target = _target;
-        rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+        rb.AddForce(transform.forward * speed, ForceMode.Impulse) ;
         Invoke(nameof(DestroyGO), 2);
     }
     
