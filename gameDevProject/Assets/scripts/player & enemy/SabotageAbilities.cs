@@ -66,13 +66,16 @@ public class SabotageAbilities : MonoBehaviour
     void ability1()
     {
         Debug.Log("Ability 1 completed");
-        sabotage1 sabotage = GetComponent<sabotage1>();
+        sabotage1 Sabotage1 = GetComponent<sabotage1>();
+        Sabotage1.StartAbility();
         //sabotage abiltiy 1
     }
     [PunRPC]
     void ability2()
     {
         Debug.Log("Ability 2 completed");
+        sabotage2 Sabotage2 = GetComponent<sabotage2>();
+        Sabotage2.StartAbility();
         //sabotage abiltiy 1
     }
     [PunRPC]

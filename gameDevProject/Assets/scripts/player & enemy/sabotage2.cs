@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class sabotage2 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject poison;
+    public void StartAbility()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Instantiate(poison, transform.position, transform.rotation);
     }
 }

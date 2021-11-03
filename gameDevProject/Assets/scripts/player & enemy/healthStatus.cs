@@ -13,6 +13,7 @@ public class healthStatus : MonoBehaviour
 
     [SerializeField] Transform spawnpoint;
     [SerializeField] GameObject DeadUi;
+    [SerializeField] GameObject deathVolume;
     void Awake()
     {
         currentHealth = maxHealth;
@@ -22,6 +23,8 @@ public class healthStatus : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.T))
             takeDamage(10);
+        if (transform.position.y < -10)
+            takeDamage(100);
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -36,6 +39,7 @@ public class healthStatus : MonoBehaviour
         if (currentHealth <= 0)
         {
             DeadUi.SetActive(true);
+            deathVolume.SetActive(true);
             Invoke(nameof(Die), 5f);
         } 
     }
@@ -43,6 +47,7 @@ public class healthStatus : MonoBehaviour
     void Die()
     {
         DeadUi.SetActive(false);
+        deathVolume.SetActive(false);
         currentHealth = 100;
         healthBar.fillAmount = 1;
         transform.position = spawnpoint.position;

@@ -10,20 +10,23 @@ public class sabotage1 : MonoBehaviour
 
     public cameraRotation camerarotation;
     playerMovement playerMov;
+    [SerializeField] GameObject sabotage1Volume;
 
     public float sabotageTime;
     // Start is called before the first frame update
-    void Start()
+    public void StartAbility()
     {
         playerMov = GetComponent<playerMovement>();
         playerMov.speed = playerMov.speed / speedChangeFactor;
         playerMov.gravity = playerMov.gravity / gravityChangeFactor;
         camerarotation.mouseSensitivity = camerarotation.mouseSensitivity / sensitivityChangeFactor;
+        sabotage1Volume.SetActive(true);
         Invoke(nameof(Reset), sabotageTime);
     }
 
     private void Reset()
     {
+        sabotage1Volume.SetActive(false);
         playerMov.speed = playerMov.speed * speedChangeFactor;
         playerMov.gravity = playerMov.gravity * gravityChangeFactor;
         camerarotation.mouseSensitivity = camerarotation.mouseSensitivity * sensitivityChangeFactor;
