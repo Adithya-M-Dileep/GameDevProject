@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class sabotage3 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform spawnPoint;
 
-    // Update is called once per frame
-    void Update()
+    public void startAbility()
     {
-        
+        transform.position = spawnPoint.position;
     }
 }

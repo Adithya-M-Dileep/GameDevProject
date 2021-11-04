@@ -11,6 +11,7 @@ public class Timer : MonoBehaviour
     public Text currentTimeText;
 
     [SerializeField] GameObject endPanel;
+    [SerializeField] Winner _winner;
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +26,7 @@ public class Timer : MonoBehaviour
         if (currentTime < 0)
         {
             endPanel.SetActive(true);
+            _winner.ShowWinner();
         }
         TimeSpan time = TimeSpan.FromSeconds(currentTime);
         currentTimeText.text = time.Minutes.ToString() + ":" + time.Seconds.ToString();

@@ -44,6 +44,8 @@ MonoBehaviour:
   - ability1
   - ability2
   - ability3
+  - ScoreValue
+  - ScoreAndName
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

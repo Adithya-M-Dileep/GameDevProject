@@ -13,14 +13,15 @@ public class playerNameManager : MonoBehaviour
         if(PlayerPrefs.HasKey("username"))
         {
             usernameInput.text = PlayerPrefs.GetString("username");
-            PhotonNetwork.NickName = PlayerPrefs.GetString("username");
+            
 
         }
-        //else
-        //{
-         //   usernameInput.text = "player" + Random.Range(0, 10000).ToString("0000");
-          //  onUsernameInputValueChange();
-        //}
+        else
+        {
+            usernameInput.text = "player" + Random.Range(0, 10000).ToString("0000");
+            
+        }
+        onUsernameInputValueChange();
     }
     public void onUsernameInputValueChange()
     {

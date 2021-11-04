@@ -7,5 +7,8 @@ public class loadRoom : MonoBehaviour
 {
     public void RoomMenu()
     {
-        PhotonNetwork.LoadLevel(0);    }
+       PhotonNetwork.LoadLevel(1);
+
+    }
+    
 }

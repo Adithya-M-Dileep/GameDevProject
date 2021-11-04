@@ -15,4 +15,8 @@ public class score : MonoBehaviour
         scoreText.text = currentScore.ToString();
     }
 
+    public int curretScoreReturn()
+    {
+        return currentScore;
+    }
 }

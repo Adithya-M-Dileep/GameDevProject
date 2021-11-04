@@ -21,7 +21,7 @@ public class SabotageAbilities : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             if(score.currentScore >= ability1Cost)
             {
@@ -34,7 +34,7 @@ public class SabotageAbilities : MonoBehaviour
                 Debug.Log("Not enough Score");
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             if (score.currentScore >= ability2Cost)
             {
@@ -47,7 +47,7 @@ public class SabotageAbilities : MonoBehaviour
                 Debug.Log("Not enough Score");
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if (score.currentScore >= ability3Cost)
             {
@@ -82,6 +82,8 @@ public class SabotageAbilities : MonoBehaviour
     void ability3()
     {
         Debug.Log("Ability 3 completed");
+        sabotage3 Sabotage3 = GetComponent<sabotage3>();
+        Sabotage3.startAbility();
         //sabotage abiltiy 1
     }
 
