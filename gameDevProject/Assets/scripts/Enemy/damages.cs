@@ -6,18 +6,21 @@ public class damages : MonoBehaviour
     public float health = 50f;
     public int scoreGained = 100;
 
-    //score scoreObj;
-   // private void Start()
-   // {
-   //     scoreObj = GetComponent<score>();
-   // }
+
+    //sound
+    public AudioSource audioSource;
+    public AudioClip explosionClip;
+    public AudioClip bulletHitClip;
     public void takeDamage(float amount)
     {
         health -= amount;
+        audioSource.PlayOneShot(bulletHitClip);
         if (health <= 0)
         {
-            //  scoreObj.ScoreIncrease(scoreGained);
+
+            audioSource.Play();
             score.currentScore += scoreGained;
+            audioSource.PlayOneShot(explosionClip);
             Destroy(gameObject);
         }
     }

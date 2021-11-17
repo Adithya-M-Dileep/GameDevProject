@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class MenuManaher : MonoBehaviour
 {
+
     public static MenuManaher Instance;
 
-    [SerializeField] Menu[] menus;
     private void Awake()
     {
         Instance = this;
     }
+
+    [SerializeField] Menu[] menus;
+    
 
     public void OpenMenu(string MenuName)
     {
@@ -20,6 +23,21 @@ public class MenuManaher : MonoBehaviour
             if (menus[i].menuName == MenuName)
             {
                 menus[i].Open();
+            }
+            else if (menus[i].open)
+            {
+                CloseMenu(menus[i]);
+            }
+        }
+    }
+    public void CloseMenu(string MenuName)
+    {
+
+        for (int i = 0; i < menus.Length; i++)
+        {
+            if (menus[i].menuName == MenuName)
+            {
+                menus[i].Close();
             }
             else if (menus[i].open)
             {
@@ -43,6 +61,11 @@ public class MenuManaher : MonoBehaviour
     {
         menu.Close();
 
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 
 }

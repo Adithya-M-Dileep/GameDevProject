@@ -9,8 +9,6 @@ public class SabotageAbilities : MonoBehaviour
     [SerializeField] int ability2Cost = 20;
     [SerializeField] int ability3Cost = 30;
 
-    
-    int current = 0;
 
     PhotonView pv;
 
@@ -21,7 +19,7 @@ public class SabotageAbilities : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             if(score.currentScore >= ability1Cost)
             {
@@ -34,7 +32,7 @@ public class SabotageAbilities : MonoBehaviour
                 Debug.Log("Not enough Score");
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
+        if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             if (score.currentScore >= ability2Cost)
             {
@@ -47,7 +45,7 @@ public class SabotageAbilities : MonoBehaviour
                 Debug.Log("Not enough Score");
             }
         }
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             if (score.currentScore >= ability3Cost)
             {
@@ -65,26 +63,27 @@ public class SabotageAbilities : MonoBehaviour
     [PunRPC]
     void ability1()
     {
-        Debug.Log("Ability 1 completed");
-        sabotage1 Sabotage1 = GetComponent<sabotage1>();
-        Sabotage1.StartAbility();
         //sabotage abiltiy 1
+
+        sabotage3 Sabotage3 = GetComponent<sabotage3>();
+        Sabotage3.startAbility();
+
     }
     [PunRPC]
     void ability2()
     {
-        Debug.Log("Ability 2 completed");
-        sabotage2 Sabotage2 = GetComponent<sabotage2>();
-        Sabotage2.StartAbility();
+
+        sabotage1 Sabotage1 = GetComponent<sabotage1>();
+        Sabotage1.StartAbility();
+
         //sabotage abiltiy 1
     }
     [PunRPC]
     void ability3()
     {
-        Debug.Log("Ability 3 completed");
-        sabotage3 Sabotage3 = GetComponent<sabotage3>();
-        Sabotage3.startAbility();
         //sabotage abiltiy 1
+        sabotage2 Sabotage2 = GetComponent<sabotage2>();
+        Sabotage2.StartAbility();
     }
 
 }

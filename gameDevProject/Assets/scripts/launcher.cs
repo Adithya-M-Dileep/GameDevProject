@@ -4,6 +4,7 @@ using UnityEngine;
 using Photon.Pun;
 using TMPro;
 using Photon.Realtime;
+using UnityEngine.SceneManagement;
 
 public class launcher : MonoBehaviourPunCallbacks
 {
@@ -29,7 +30,6 @@ public class launcher : MonoBehaviourPunCallbacks
         Debug.Log("Connecting to Master");
         PhotonNetwork.ConnectUsingSettings();
     }
-
     public override void OnConnectedToMaster()
     {
         Debug.Log("Connected To master");
@@ -119,5 +119,7 @@ public class launcher : MonoBehaviourPunCallbacks
     public void StartGame()
     {
         PhotonNetwork.LoadLevel(1);
+
+        MenuManaher.Instance.CloseMenu("room");
     }
 }

@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class sabotage1 : MonoBehaviour
 {
-    [SerializeField] float speedChangeFactor;
-    [SerializeField] float gravityChangeFactor;
-    [SerializeField] float sensitivityChangeFactor;
+    [SerializeField] float speedChange;
+    [SerializeField] float sensitivityChange;
+
+    float oldSpeed;
+    float oldSensitivity;
 
     public cameraRotation camerarotation;
     playerMovement playerMov;
@@ -17,9 +19,11 @@ public class sabotage1 : MonoBehaviour
     public void StartAbility()
     {
         playerMov = GetComponent<playerMovement>();
-        playerMov.speed = playerMov.speed / speedChangeFactor;
-        playerMov.gravity = playerMov.gravity / gravityChangeFactor;
-        camerarotation.mouseSensitivity = camerarotation.mouseSensitivity / sensitivityChangeFactor;
+        oldSpeed = playerMov.speed;
+        oldSensitivity = camerarotation.mouseSensitivity;
+
+        playerMov.speed = speedChange;
+        camerarotation.mouseSensitivity = sensitivityChange;
         sabotage1Volume.SetActive(true);
         Invoke(nameof(Reset), sabotageTime);
     }
@@ -27,8 +31,7 @@ public class sabotage1 : MonoBehaviour
     private void Reset()
     {
         sabotage1Volume.SetActive(false);
-        playerMov.speed = playerMov.speed * speedChangeFactor;
-        playerMov.gravity = playerMov.gravity * gravityChangeFactor;
-        camerarotation.mouseSensitivity = camerarotation.mouseSensitivity * sensitivityChangeFactor;
+        playerMov.speed = oldSpeed;
+        camerarotation.mouseSensitivity = oldSensitivity;
     }
 }

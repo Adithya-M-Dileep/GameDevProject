@@ -11,6 +11,9 @@ public class grenade : MonoBehaviour
 
     bool hasExploded = false;
 
+    //sound
+    public AudioSource audioSource;
+    public AudioClip explosionClip;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +29,7 @@ public class grenade : MonoBehaviour
         {
             Explode();
             hasExploded = true;
+            
         }
     }
 
@@ -41,7 +45,9 @@ public class grenade : MonoBehaviour
                 enemy.takeDamage(blastDamage);
             }
         }
-        Destroy(explosion, 2f);
-        Destroy(gameObject);
+        audioSource.PlayOneShot(explosionClip);
+        Destroy(explosion,2f);
+        Destroy(gameObject,1f);
+
     }
 }

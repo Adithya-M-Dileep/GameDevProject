@@ -5,7 +5,7 @@ using System;
 
 public class sabotage2Poison : MonoBehaviour
 {
-    
+
     float currentTime;
     public float startingMinute;
     public float damageInterval;
@@ -14,7 +14,7 @@ public class sabotage2Poison : MonoBehaviour
 
     void Start()
     {
-        currentTime = startingMinute*60;
+        currentTime = startingMinute * 60;
         DecreaseLife();
     }
 
@@ -24,9 +24,9 @@ public class sabotage2Poison : MonoBehaviour
         currentTime = currentTime - Time.deltaTime;
         if (currentTime < 0)
         {
-           Destroy(gameObject);
+            Destroy(gameObject);
         }
-        
+
     }
     void DecreaseLife()
     {

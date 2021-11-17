@@ -46,6 +46,8 @@ MonoBehaviour:
   - ability3
   - ScoreValue
   - ScoreAndName
+  - OtherplayerScoreUpdate
+  - GameEnd
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 0

@@ -6,6 +6,7 @@ using Photon.Pun;
 
 public class playerNameManager : MonoBehaviour
 {
+    
     [SerializeField] TMP_InputField usernameInput;
 
     private void Start()
