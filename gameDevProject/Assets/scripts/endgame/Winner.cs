@@ -21,6 +21,7 @@ public class Winner : MonoBehaviour
     {
         ownScore = score.currentScore;
         ownName = PhotonNetwork.NickName;
+        WinnerDisplay(ownName);
         pv.RPC("ScoreAndName", RpcTarget.Others,ownScore,ownName);
     }
 
