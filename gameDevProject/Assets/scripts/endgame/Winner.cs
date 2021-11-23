@@ -15,13 +15,13 @@ public class Winner : MonoBehaviour
     private void Awake()
     {
         pv = GetComponent<PhotonView>();
+        ownName = PhotonNetwork.NickName;
+        Name.text = ownName;
     }
 
     public void ShowWinner()
     {
         ownScore = score.currentScore;
-        ownName = PhotonNetwork.NickName;
-        WinnerDisplay(ownName);
         pv.RPC("ScoreAndName", RpcTarget.Others,ownScore,ownName);
     }
 

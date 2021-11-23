@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5757055165948783378}
   - component: {fileID: -654847748811050304}
   - component: {fileID: 6120522222029499285}
-  - component: {fileID: -5039044859782930712}
+  - component: {fileID: 7069540665261624815}
   m_Layer: 0
   m_Name: projectile
   m_TagString: bullet
@@ -113,8 +113,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &-5039044859782930712
-BoxCollider:
+--- !u!135 &7069540665261624815
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -124,5 +124,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+  m_Radius: 0.49999997
   m_Center: {x: 0, y: 0, z: 0}

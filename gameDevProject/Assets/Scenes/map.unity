@@ -174,6 +174,102 @@ MonoBehaviour:
   maxZ: 115
   yPos: 39.61
   waitTime: 1
+--- !u!1 &235165781
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 235165782}
+  - component: {fileID: 235165785}
+  - component: {fileID: 235165784}
+  - component: {fileID: 235165783}
+  m_Layer: 8
+  m_Name: hologram_LOD0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &235165782
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235165781}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0, y: 3.46, z: 0}
+  m_LocalScale: {x: 0.8711936, y: 0.8711935, z: 0.8711935}
+  m_Children: []
+  m_Father: {fileID: 1633716097}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &235165783
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235165781}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3629107148218985661, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
+--- !u!23 &235165784
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235165781}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d1c325922182ba04397e74e2bcd582fd, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &235165785
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235165781}
+  m_Mesh: {fileID: -3629107148218985661, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!1 &263472058
 GameObject:
   m_ObjectHideFlags: 0
@@ -6230,7 +6326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73708874c4b113041bd1b95c9ecf9824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingMinute: 3
+  startingMinute: 5
   currentTimeText: {fileID: 1916630759}
   maxScore: 1000
   endPanel: {fileID: 1668809081}
@@ -6893,7 +6989,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: d1c325922182ba04397e74e2bcd582fd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7095,6 +7191,106 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1633716096
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1633716097}
+  - component: {fileID: 1633716100}
+  - component: {fileID: 1633716099}
+  - component: {fileID: 1633716098}
+  m_Layer: 8
+  m_Name: projector_LOD0 (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
+  m_IsActive: 1
+--- !u!4 &1633716097
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633716096}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 38.4, y: 0, z: 75.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 235165782}
+  m_Father: {fileID: 1911953167941175169}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1633716098
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633716096}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -381978095027386059, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
+--- !u!23 &1633716099
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633716096}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 3217074026247768264, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
+  - {fileID: -1454593233258608648, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
+  - {fileID: -5416684472279056462, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
+  - {fileID: 9021832236705941193, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1633716100
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633716096}
+  m_Mesh: {fileID: -381978095027386059, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!1 &1635231663
 GameObject:
   m_ObjectHideFlags: 0
@@ -7439,7 +7635,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -70.6, y: -49.2}
+  m_AnchoredPosition: {x: -70.6001, y: -49.19995}
   m_SizeDelta: {x: 127.07626, y: 70.305435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1916630759
@@ -12784,8 +12980,8 @@ GameObject:
   m_Name: bunk_bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7365155856312438
 MeshCollider:
@@ -12984,8 +13180,8 @@ GameObject:
   m_Name: hydroponic_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &31669643082503901
 MeshCollider:
@@ -13153,8 +13349,8 @@ GameObject:
   m_Name: cabinet_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &84783553441888579
 MeshCollider:
@@ -13658,8 +13854,8 @@ GameObject:
   m_Name: GateSmallFrameB__3_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &237593495371742395
 MeshCollider:
@@ -13809,8 +14005,8 @@ GameObject:
   m_Name: FloorInteriorA4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &298983186858055000
 MeshCollider:
@@ -13966,8 +14162,8 @@ GameObject:
   m_Name: WallSmallC__2__3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &341448851706340931
 MeshCollider:
@@ -14363,8 +14559,8 @@ GameObject:
   m_Name: WallSmallC__10_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &487487377862420919
 MeshCollider:
@@ -14622,8 +14818,8 @@ GameObject:
   m_Name: WallSmallC__9__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &540026816534299710
 MeshCollider:
@@ -14766,8 +14962,8 @@ GameObject:
   m_Name: decorative_chair_LOD0_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &563770284130039234
 GameObject:
@@ -15161,8 +15357,8 @@ GameObject:
   m_Name: container_small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &659868594530797313
 MeshCollider:
@@ -15311,8 +15507,8 @@ GameObject:
   m_Name: decorative_plant__1_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &697238793579646827
 MeshCollider:
@@ -15347,13 +15543,28 @@ GameObject:
   - component: {fileID: 5662134936519390848}
   - component: {fileID: 6544843409667806535}
   - component: {fileID: 5183596255382208953}
+  - component: {fileID: 702395179588019913}
   m_Layer: 8
   m_Name: hologram_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!64 &702395179588019913
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702395179588019912}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3629107148218985661, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!4 &704782199994054646
 Transform:
   m_ObjectHideFlags: 0
@@ -15978,6 +16189,7 @@ GameObject:
   - component: {fileID: 1116025375135483311}
   - component: {fileID: 5348185863358855472}
   - component: {fileID: 6790663184466245224}
+  - component: {fileID: 838014972239722458}
   m_Layer: 8
   m_Name: generator_1
   m_TagString: Untagged
@@ -15985,6 +16197,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &838014972239722458
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838014972239722457}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6490385116150418309, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!4 &844884905065745876
 Transform:
   m_ObjectHideFlags: 0
@@ -16181,8 +16407,8 @@ GameObject:
   m_Name: GateSmallFrameC__2__2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &909747238751961555
 MeshCollider:
@@ -16349,8 +16575,8 @@ GameObject:
   m_Name: desk_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &938150915979711580
 MeshCollider:
@@ -17088,47 +17314,6 @@ Transform:
   m_Father: {fileID: 4301463812996157720}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1107020594285408799
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5367591055500677740}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: d1c325922182ba04397e74e2bcd582fd, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &1110695047837731144
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -17286,8 +17471,8 @@ GameObject:
   m_Name: bunk_bed_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1140397182011367472
 MeshCollider:
@@ -17327,8 +17512,8 @@ GameObject:
   m_Name: FloorInteriorA4__3__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1142568482911155502
 MeshCollider:
@@ -17431,8 +17616,8 @@ GameObject:
   m_Name: FloorInteriorA4__5__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1156305869520697915
 MeshCollider:
@@ -17490,8 +17675,8 @@ GameObject:
   m_Name: Cube__1__3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1180057629757647792
 MeshCollider:
@@ -17715,8 +17900,8 @@ GameObject:
   m_Name: WallSmallC__8_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1258553124970856966
 MeshCollider:
@@ -17982,6 +18167,7 @@ GameObject:
   - component: {fileID: 8449630934552894779}
   - component: {fileID: 4683906022602629284}
   - component: {fileID: 2157601575449066329}
+  - component: {fileID: 1360736603652638889}
   m_Layer: 8
   m_Name: generator_3
   m_TagString: Untagged
@@ -17989,6 +18175,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1360736603652638889
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360736603652638888}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6490385116150418309, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!4 &1367379047128841201
 Transform:
   m_ObjectHideFlags: 0
@@ -18014,6 +18214,7 @@ GameObject:
   - component: {fileID: 4882032657373083127}
   - component: {fileID: 1385241056022409904}
   - component: {fileID: 4000957774619777855}
+  - component: {fileID: 1372177374899326414}
   m_Layer: 8
   m_Name: glass_panel_1_corner__1_
   m_TagString: Untagged
@@ -18021,6 +18222,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &1372177374899326414
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372177374899326413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8249076504499758433, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!33 &1385241056022409904
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18741,8 +18956,8 @@ GameObject:
   m_Name: GateSmallFrameC__2__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1562687556434591711
 MeshCollider:
@@ -19025,8 +19240,8 @@ GameObject:
   m_Name: WallSmallC__3__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1643668067187734644
 MeshCollider:
@@ -19569,8 +19784,8 @@ GameObject:
   m_Name: RampSmall_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1762487473573848540
 MeshCollider:
@@ -19630,8 +19845,8 @@ GameObject:
   m_Name: FloorInteriorA4__7_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1774372741823825529
 MeshCollider:
@@ -19874,7 +20089,6 @@ Transform:
   m_Children:
   - {fileID: 8366910326719863881}
   - {fileID: 1494196424613227957}
-  - {fileID: 6745115695890202971}
   - {fileID: 8273620499818773914}
   m_Father: {fileID: 8773404773194573350}
   m_RootOrder: 22
@@ -20160,8 +20374,8 @@ GameObject:
   m_Name: FloorInteriorA4__6_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1900406035488300475
 MeshCollider:
@@ -20260,6 +20474,7 @@ Transform:
   - {fileID: 4538295430541037358}
   - {fileID: 1088415441365187033}
   - {fileID: 8753031009895608851}
+  - {fileID: 1633716097}
   m_Father: {fileID: 2065208348605307375}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20312,8 +20527,8 @@ GameObject:
   m_Name: FloorInteriorA6__2_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1941115803508488004
 MeshCollider:
@@ -20465,8 +20680,8 @@ GameObject:
   m_Name: hydroponic_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2018286527455381511
 MeshCollider:
@@ -20498,8 +20713,8 @@ GameObject:
   m_Name: WallSmallC__5__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2021473848381442081
 MeshCollider:
@@ -20923,8 +21138,8 @@ GameObject:
   m_Name: WallSmallC_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2154522786392334107
 MeshCollider:
@@ -21135,8 +21350,8 @@ GameObject:
   m_Name: WallSmallC__15__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2212245047556980299
 MeshCollider:
@@ -21168,8 +21383,8 @@ GameObject:
   m_Name: WallSmallC__14__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2224791452196449282
 MeshCollider:
@@ -21313,8 +21528,8 @@ GameObject:
   m_Name: desk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2251023433063143071
 MeshCollider:
@@ -21514,8 +21729,8 @@ GameObject:
   m_Name: FloorInteriorA4_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2294475404639175305
 MeshCollider:
@@ -21547,8 +21762,8 @@ GameObject:
   m_Name: WallSmallC__6__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2294896482154551246
 MeshCollider:
@@ -21983,8 +22198,8 @@ GameObject:
   m_Name: WallSmallC__13_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2433937409044744303
 MeshCollider:
@@ -22052,8 +22267,8 @@ GameObject:
   m_Name: WallSmallC__15_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2447972006956332666
 MeshCollider:
@@ -22092,8 +22307,8 @@ GameObject:
   m_Name: FloorInteriorA6_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &2498583834534381156
 GameObject:
@@ -22155,6 +22370,7 @@ GameObject:
   - component: {fileID: 2770584888194643191}
   - component: {fileID: 3974727501782626255}
   - component: {fileID: 145018985809411121}
+  - component: {fileID: 2509693350846982983}
   m_Layer: 8
   m_Name: generator__1__1
   m_TagString: Untagged
@@ -22162,6 +22378,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &2509693350846982983
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2509693350846982982}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6490385116150418309, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!4 &2517880891267128932
 Transform:
   m_ObjectHideFlags: 0
@@ -22192,8 +22422,8 @@ GameObject:
   m_Name: RampSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2520186068827844571
 MeshCollider:
@@ -22800,8 +23030,8 @@ GameObject:
   m_Name: art_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2714804103925302615
 MeshCollider:
@@ -23032,8 +23262,8 @@ GameObject:
   m_Name: FloorInteriorA4__3_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2779991130528167781
 MeshCollider:
@@ -23278,8 +23508,8 @@ GameObject:
   m_Name: torpedo_docking_station_1_side_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2815795881044511162
 MeshCollider:
@@ -23341,8 +23571,8 @@ GameObject:
   m_Name: console_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2833266874090086088
 MeshCollider:
@@ -23695,8 +23925,8 @@ GameObject:
   m_Name: WallSmallC__5_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &2933540737430135907
 MeshCollider:
@@ -23964,8 +24194,8 @@ GameObject:
   m_Name: FloorInteriorA4__2__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3001392067531833827
 MeshCollider:
@@ -24138,24 +24368,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &3066619864671482291
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6745115695890202971}
-  - component: {fileID: 6024110801218256844}
-  - component: {fileID: 5957577481470856178}
-  m_Layer: 8
-  m_Name: projector_LOD0_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &3073252121587207724
 GameObject:
   m_ObjectHideFlags: 0
@@ -24259,8 +24471,8 @@ GameObject:
   m_Name: storage_container_big_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3097379835671110852
 MeshCollider:
@@ -24903,8 +25115,8 @@ GameObject:
   m_Name: WallSmallC__12__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3287824607804002170
 MeshCollider:
@@ -25036,8 +25248,8 @@ GameObject:
   m_Name: decorative_table_no_glass_only_top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3346599579973211356
 MeshCollider:
@@ -25209,8 +25421,8 @@ GameObject:
   m_Name: generator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3368761595835136358
 MeshCollider:
@@ -25859,8 +26071,8 @@ GameObject:
   m_Name: WallSmallC__9_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3508965860096838588
 MeshCollider:
@@ -25952,8 +26164,8 @@ GameObject:
   m_Name: FloorInteriorA4__4_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3533847765346770074
 MeshCollider:
@@ -26110,8 +26322,8 @@ LODGroup:
     - renderer: {fileID: 2593245310998524870}
     - renderer: {fileID: 5183596255382208953}
     - renderer: {fileID: 6100300504073257344}
-    - renderer: {fileID: 5957577481470856178}
-    - renderer: {fileID: 1107020594285408799}
+    - renderer: {fileID: 0}
+    - renderer: {fileID: 0}
   - screenRelativeHeight: 0.01
     fadeTransitionWidth: 0
     renderers:
@@ -26317,8 +26529,8 @@ GameObject:
   m_Name: storage_container_small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3612790892416907779
 MeshCollider:
@@ -26364,8 +26576,8 @@ GameObject:
   m_Name: decorative_table_no_glass_only_top_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &3621243825006582001
 MeshCollider:
@@ -27874,8 +28086,8 @@ GameObject:
   m_Name: FloorInteriorA6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &3972162127053083403
 MeshRenderer:
@@ -28088,8 +28300,8 @@ GameObject:
   m_Name: generator_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4020038741260021492
 MeshCollider:
@@ -28116,6 +28328,7 @@ GameObject:
   - component: {fileID: 2910240058369637102}
   - component: {fileID: 4213194290465008701}
   - component: {fileID: 236885646335264906}
+  - component: {fileID: 4021260624939467879}
   m_Layer: 8
   m_Name: floor_5__1__1
   m_TagString: Untagged
@@ -28123,6 +28336,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &4021260624939467879
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4021260624939467878}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3908758026775299890, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!23 &4022117519569396984
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -28483,6 +28710,7 @@ GameObject:
   - component: {fileID: 20583912454198048}
   - component: {fileID: 4723237683840910269}
   - component: {fileID: 7745438006924449372}
+  - component: {fileID: 4134426179483559995}
   m_Layer: 8
   m_Name: glass_panel_1_corner__1__1
   m_TagString: Untagged
@@ -28490,6 +28718,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &4134426179483559995
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4134426179483559994}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8249076504499758433, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!33 &4144907945518523632
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -28848,6 +29090,7 @@ GameObject:
   - component: {fileID: 1816459804878631472}
   - component: {fileID: 4947479093716128587}
   - component: {fileID: 2642680193958846000}
+  - component: {fileID: 4232492993884182315}
   m_Layer: 8
   m_Name: battery_1
   m_TagString: Untagged
@@ -28855,6 +29098,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &4232492993884182315
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4232492993884182314}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2159965483007997719, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!4 &4234086284566289989
 Transform:
   m_ObjectHideFlags: 0
@@ -29168,8 +29425,8 @@ GameObject:
   m_Name: FloorInteriorA4__6__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4285894059026994490
 MeshCollider:
@@ -29260,13 +29517,28 @@ GameObject:
   - component: {fileID: 2817572075864217560}
   - component: {fileID: 6677753081494758353}
   - component: {fileID: 3697172478271985035}
+  - component: {fileID: 4306849199014199105}
   m_Layer: 8
   m_Name: floor_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!64 &4306849199014199105
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4306849199014199104}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3908758026775299890, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!1 &4311318450098476948
 GameObject:
   m_ObjectHideFlags: 0
@@ -29412,8 +29684,8 @@ GameObject:
   m_Name: Battery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4366540574007912186
 MeshCollider:
@@ -29445,8 +29717,8 @@ GameObject:
   m_Name: FloorInteriorA6__2__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4366590942367710846
 MeshCollider:
@@ -29470,7 +29742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6362031640456809411}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 86351738486110649}
@@ -29757,13 +30029,28 @@ GameObject:
   - component: {fileID: 1088415441365187033}
   - component: {fileID: 2393529623958010545}
   - component: {fileID: 2593245310998524870}
+  - component: {fileID: 4459314666484324874}
   m_Layer: 8
   m_Name: projector_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!64 &4459314666484324874
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4459314666484324873}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -381978095027386059, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!1 &4468442294919696157
 GameObject:
   m_ObjectHideFlags: 0
@@ -29780,8 +30067,8 @@ GameObject:
   m_Name: FloorInteriorA4__1__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4468442294919696158
 MeshCollider:
@@ -29839,6 +30126,7 @@ GameObject:
   - component: {fileID: 4234086284566289989}
   - component: {fileID: 8350133959391954375}
   - component: {fileID: 3638107296307876684}
+  - component: {fileID: 4502851272277579379}
   m_Layer: 8
   m_Name: storage_container_small_2
   m_TagString: Untagged
@@ -29846,6 +30134,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &4502851272277579379
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4502851272277579378}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5740419444151596541, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!1 &4503960243635612027
 GameObject:
   m_ObjectHideFlags: 0
@@ -29904,8 +30206,8 @@ GameObject:
   m_Name: GateSmallFrameC__2__3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4519477561907880678
 MeshCollider:
@@ -30372,8 +30674,8 @@ GameObject:
   m_Name: GateSmallFrameB__3__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4646513360282937614
 MeshCollider:
@@ -30697,8 +30999,8 @@ GameObject:
   m_Name: WallSmallC__14_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4712260037502558718
 MeshCollider:
@@ -30825,8 +31127,8 @@ GameObject:
   m_Name: WallSmallC__4__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4745422960968204353
 MeshCollider:
@@ -30951,8 +31253,8 @@ GameObject:
   m_Name: WallSmallC__6_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4769924302038501698
 MeshCollider:
@@ -31103,8 +31405,8 @@ GameObject:
   m_Name: WallSmallC__2__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4844180096121181998
 MeshCollider:
@@ -31599,8 +31901,8 @@ GameObject:
   m_Name: WallSmallC__1_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &4977333395195675913
 MeshCollider:
@@ -31702,7 +32004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &5011290066099043582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31802,8 +32104,8 @@ GameObject:
   m_Name: hydroponic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5022807519719093634
 MeshCollider:
@@ -31921,8 +32223,8 @@ GameObject:
   m_Name: FloorInteriorA4__4__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5065340259155571625
 MeshCollider:
@@ -32141,8 +32443,8 @@ GameObject:
   m_Name: shield_generator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5137256739237963620
 MeshCollider:
@@ -32247,8 +32549,8 @@ GameObject:
   m_Name: GateSmallFrameC__3_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5160379296830215906
 MeshCollider:
@@ -32599,8 +32901,8 @@ GameObject:
   m_Name: WallSmallC__7__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5226055217316040385
 MeshCollider:
@@ -32728,8 +33030,8 @@ GameObject:
   m_Name: WallSmallC__12_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5247370774624304903
 MeshCollider:
@@ -32989,8 +33291,8 @@ GameObject:
   m_Name: WallSmallC__7_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5309157335954457575
 MeshCollider:
@@ -33044,24 +33346,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6538856272437094821}
   m_Mesh: {fileID: -8920347475220715171, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
---- !u!1 &5367591055500677740
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7499495789199643977}
-  - component: {fileID: 5699190825315612549}
-  - component: {fileID: 1107020594285408799}
-  m_Layer: 8
-  m_Name: hologram_LOD0_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!23 &5367805316032251722
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33117,6 +33401,7 @@ GameObject:
   - component: {fileID: 2542242673452297509}
   - component: {fileID: 7988083658140055470}
   - component: {fileID: 8416225279147636333}
+  - component: {fileID: 5373607853950671864}
   m_Layer: 8
   m_Name: glass_panel_1_corner
   m_TagString: Untagged
@@ -33124,6 +33409,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &5373607853950671864
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5373607853950671863}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8249076504499758433, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!23 &5375218525628713301
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -33224,8 +33523,8 @@ GameObject:
   m_Name: WallSmallC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5423148952941992367
 MeshCollider:
@@ -33828,8 +34127,8 @@ GameObject:
   m_Name: cabinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5519662956247227699
 MeshCollider:
@@ -34558,14 +34857,6 @@ Transform:
   m_Father: {fileID: 1194249497129044510}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5699190825315612549
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5367591055500677740}
-  m_Mesh: {fileID: -3629107148218985661, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!4 &5701595875571582073
 Transform:
   m_ObjectHideFlags: 0
@@ -35134,8 +35425,8 @@ GameObject:
   m_Name: WallSmallC__11_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5923042704907511254
 MeshCollider:
@@ -35260,50 +35551,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!23 &5957577481470856178
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3066619864671482291}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 3217074026247768264, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
-  - {fileID: -1454593233258608648, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
-  - {fileID: -5416684472279056462, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
-  - {fileID: 9021832236705941193, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &5961202133957375469
 GameObject:
   m_ObjectHideFlags: 0
@@ -35352,8 +35599,8 @@ GameObject:
   m_Name: FloorInteriorA6__1_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &5969724898605614798
 MeshCollider:
@@ -35413,8 +35660,8 @@ GameObject:
   m_Name: FloorInteriorA4__2_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6016189127003691350
 MeshCollider:
@@ -35476,14 +35723,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!33 &6024110801218256844
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3066619864671482291}
-  m_Mesh: {fileID: -381978095027386059, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!33 &6029692140773464362
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -35689,6 +35928,7 @@ GameObject:
   - component: {fileID: 3031005196425788742}
   - component: {fileID: 3621553939363331848}
   - component: {fileID: 7257290841054750606}
+  - component: {fileID: 6067222330462187768}
   m_Layer: 8
   m_Name: generator__1_
   m_TagString: Untagged
@@ -35696,6 +35936,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &6067222330462187768
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6067222330462187767}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6490385116150418309, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!33 &6075105041589727173
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -36940,8 +37194,8 @@ GameObject:
   m_Name: storage_container_big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6335076471307008663
 MeshCollider:
@@ -37100,8 +37354,8 @@ GameObject:
   m_Name: GateSmallFrameC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6348842950901882939
 MeshCollider:
@@ -37158,13 +37412,28 @@ GameObject:
   - component: {fileID: 4376227220640671158}
   - component: {fileID: 5254143749357370779}
   - component: {fileID: 1204380780424934147}
+  - component: {fileID: 6362031640456809412}
   m_Layer: 8
   m_Name: floor_5_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
+--- !u!64 &6362031640456809412
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6362031640456809411}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3908758026775299890, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!4 &6371737162207852076
 Transform:
   m_ObjectHideFlags: 0
@@ -37238,8 +37507,8 @@ GameObject:
   m_Name: container_big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6385005843461547715
 MeshCollider:
@@ -37585,6 +37854,7 @@ GameObject:
   - component: {fileID: 4958450600064426001}
   - component: {fileID: 8770360435059668531}
   - component: {fileID: 3856649709916002806}
+  - component: {fileID: 6473986974450297812}
   m_Layer: 8
   m_Name: glass_panel_1_corner__2__1
   m_TagString: Untagged
@@ -37592,6 +37862,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &6473986974450297812
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6473986974450297811}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8249076504499758433, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!4 &6476442151547059819
 Transform:
   m_ObjectHideFlags: 0
@@ -38374,21 +38658,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060123886899791017}
   m_Mesh: {fileID: 5208823297448703653, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
---- !u!4 &6745115695890202971
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3066619864671482291}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 7499495789199643977}
-  m_Father: {fileID: 1825283415854685963}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6750357690377113431
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -38667,8 +38936,8 @@ GameObject:
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6841252876564809450
 MeshCollider:
@@ -39220,8 +39489,8 @@ GameObject:
   m_Name: GateSmallFrameB__2_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &6971760983046049191
 MeshCollider:
@@ -39650,8 +39919,8 @@ GameObject:
   m_Name: hydroponic_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7073374507851400948
 MeshCollider:
@@ -39804,8 +40073,8 @@ GameObject:
   m_Name: GateSmallFrameC__1__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7130385850077240786
 MeshCollider:
@@ -39879,8 +40148,8 @@ GameObject:
   m_Name: art_2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7146380872462374041
 MeshCollider:
@@ -39986,8 +40255,8 @@ GameObject:
   m_Name: WallSmallC__3__3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7173640122096939950
 MeshCollider:
@@ -40108,8 +40377,8 @@ GameObject:
   m_Name: GateSmallFrameC__3__3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7188176155912598839
 MeshCollider:
@@ -40236,8 +40505,8 @@ GameObject:
   m_Name: console
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &7257290841054750606
 MeshRenderer:
@@ -40734,8 +41003,8 @@ GameObject:
   m_Name: shield_generator_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7384912032851978068
 MeshCollider:
@@ -41071,20 +41340,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6022575473043087615}
   m_Mesh: {fileID: -8920347475220715171, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
---- !u!4 &7499495789199643977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5367591055500677740}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 3.46, z: 0}
-  m_LocalScale: {x: 0.8711936, y: 0.8711935, z: 0.8711935}
-  m_Children: []
-  m_Father: {fileID: 6745115695890202971}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7502241746437311957
 GameObject:
   m_ObjectHideFlags: 0
@@ -41402,8 +41657,8 @@ GameObject:
   m_Name: GateSmallFrameC__2_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7602766932905072252
 MeshCollider:
@@ -41701,8 +41956,8 @@ GameObject:
   m_Name: Cube__1__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7696250117523887949
 MeshCollider:
@@ -42063,8 +42318,8 @@ GameObject:
   m_Name: WallSmallC__11__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7773666668214718219
 MeshCollider:
@@ -42096,8 +42351,8 @@ GameObject:
   m_Name: GateSmallFrameC__1_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7778638153351855294
 MeshCollider:
@@ -42272,8 +42527,8 @@ GameObject:
   m_Name: GateSmallFrameC__3__2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7791018546141303827
 MeshCollider:
@@ -42417,6 +42672,7 @@ GameObject:
   - component: {fileID: 538263494588363770}
   - component: {fileID: 514791093970612283}
   - component: {fileID: 869518931279893364}
+  - component: {fileID: 7854088414024283041}
   m_Layer: 8
   m_Name: glass_panel_1_corner_1
   m_TagString: Untagged
@@ -42424,6 +42680,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &7854088414024283041
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7854088414024283040}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8249076504499758433, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!1 &7855424193943606340
 GameObject:
   m_ObjectHideFlags: 0
@@ -42686,8 +42956,8 @@ GameObject:
   m_Name: GateSmallFrameB__2__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7904314746910615340
 MeshCollider:
@@ -42745,8 +43015,8 @@ GameObject:
   m_Name: storage_container_small_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &7920247107642021531
 MeshCollider:
@@ -43345,8 +43615,8 @@ GameObject:
   m_Name: WallSmallC__4_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8089369566803084438
 MeshCollider:
@@ -43400,8 +43670,8 @@ GameObject:
   m_Name: FloorInteriorA6__1__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8097198637419666624
 MeshCollider:
@@ -43601,8 +43871,8 @@ GameObject:
   m_Name: WallSmallC__1__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8115983630989040639
 MeshCollider:
@@ -43884,8 +44154,8 @@ GameObject:
   m_Name: WallSmallC__13__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8194751066999741181
 MeshCollider:
@@ -43916,8 +44186,8 @@ GameObject:
   m_Name: WallSmallC__8__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!1 &8212390578937296632
 GameObject:
@@ -44068,7 +44338,7 @@ Transform:
   m_Children:
   - {fileID: 1825541084024975706}
   m_Father: {fileID: 1825283415854685963}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8274046841995196715
 MeshFilter:
@@ -44105,6 +44375,7 @@ GameObject:
   - component: {fileID: 8525713390490885419}
   - component: {fileID: 2065393240928571360}
   - component: {fileID: 3678227986825656313}
+  - component: {fileID: 8295849793801281504}
   m_Layer: 8
   m_Name: glass_panel_1_corner__2_
   m_TagString: Untagged
@@ -44112,6 +44383,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8295849793801281504
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8295849793801281503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8249076504499758433, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!23 &8298607939277432605
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44685,6 +44970,7 @@ GameObject:
   - component: {fileID: 4549328937839442866}
   - component: {fileID: 553866883123127425}
   - component: {fileID: 4301733758054401761}
+  - component: {fileID: 8465676678214128677}
   m_Layer: 8
   m_Name: storage_container_small_5
   m_TagString: Untagged
@@ -44692,6 +44978,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8465676678214128677
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8465676678214128676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -5740419444151596541, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!4 &8471647279255115992
 Transform:
   m_ObjectHideFlags: 0
@@ -45066,8 +45366,8 @@ GameObject:
   m_Name: WallSmallC__10__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8578236654087327925
 MeshCollider:
@@ -45747,6 +46047,7 @@ GameObject:
   - component: {fileID: 943716983722382991}
   - component: {fileID: 7890715708478191766}
   - component: {fileID: 403083751157907985}
+  - component: {fileID: 8662670103329127013}
   m_Layer: 8
   m_Name: glass_panel_1_corner__3_
   m_TagString: Untagged
@@ -45754,6 +46055,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &8662670103329127013
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8662670103329127012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8249076504499758433, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!1 &8680797388984116185
 GameObject:
   m_ObjectHideFlags: 0
@@ -45937,12 +46252,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8727740284427786615}
+  - component: {fileID: 8727740284427786616}
   - component: {fileID: 8727740284427786608}
   - component: {fileID: 8727740284427786614}
   - component: {fileID: 8727740284427786611}
   - component: {fileID: 8727740284427786612}
   - component: {fileID: 8727740284427786613}
-  - component: {fileID: 8727740284427786616}
   - component: {fileID: 8727740284427786610}
   - component: {fileID: 8727740284427786619}
   - component: {fileID: 8727740284427786618}
@@ -46074,7 +46389,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 1.95, z: 0.6}
+  m_Size: {x: 1, y: 4, z: 1}
   m_Center: {x: 0, y: 0.27, z: 0}
 --- !u!114 &8727740284427786617
 MonoBehaviour:
@@ -46223,7 +46538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8727740284946073922}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.228, z: 0}
+  m_LocalPosition: {x: 0, y: -1.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8727740284427786615}
@@ -46399,7 +46714,7 @@ MonoBehaviour:
   grenadePrefab: {fileID: 7807770271035186939, guid: c3d112489acf5da48a27f64d52d48bd5, type: 3}
   throwPoint: {fileID: 1371172424}
   maxGrenadeCount: 5
-  grenadeRefillTime: 5
+  grenadeRefillTime: 30
 --- !u!114 &8727740285367913156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46453,7 +46768,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8727740285367913154}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.759, z: -0.198}
+  m_LocalPosition: {x: 0, y: 1.81, z: -0.198}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8727740285167192994}
@@ -46548,8 +46863,8 @@ GameObject:
   m_Name: container_big_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8741879923856192965
 MeshCollider:
@@ -47088,8 +47403,8 @@ GameObject:
   m_Name: container_small_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8870928492620108795
 MeshCollider:
@@ -47226,8 +47541,8 @@ GameObject:
   m_Name: storage_container_small_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8896137569718259445
 MeshCollider:
@@ -47358,8 +47673,8 @@ GameObject:
   m_Name: GateSmallFrameC__3__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8905190951267364240
 MeshCollider:
@@ -47391,8 +47706,8 @@ GameObject:
   m_Name: Battery_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8911004226222474483
 MeshCollider:
@@ -47438,8 +47753,8 @@ GameObject:
   m_Name: FloorInteriorA4__7__1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &8915053621193515038
 MeshCollider:
@@ -47501,8 +47816,8 @@ GameObject:
   m_Name: decorative_chair_LOD0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!33 &8928031296010521652
 MeshFilter:
@@ -47956,9 +48271,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fpsCam: {fileID: 8727740285367913152}
-  damage: 10
+  damage: 25
   range: 100
-  fireRate: 4
+  fireRate: 2
   maxBullets: 10
   reloadTime: 2
   muzzleFlash: {fileID: 287597795}
@@ -47995,8 +48310,8 @@ GameObject:
   m_Name: FloorInteriorA4__5_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9029159033590586542
 MeshCollider:
@@ -48140,6 +48455,7 @@ GameObject:
   - component: {fileID: 6020729550517333247}
   - component: {fileID: 4504580263313629176}
   - component: {fileID: 2776908925601588910}
+  - component: {fileID: 9078879046211741201}
   m_Layer: 8
   m_Name: glass_panel_1_corner__3__1
   m_TagString: Untagged
@@ -48147,6 +48463,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!64 &9078879046211741201
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9078879046211741200}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8249076504499758433, guid: 8cf9240e90bc110499032dfb243fde8a, type: 3}
 --- !u!1 &9080227128502302676
 GameObject:
   m_ObjectHideFlags: 0
@@ -48382,8 +48712,8 @@ GameObject:
   m_Name: FloorInteriorA4__1_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9112791767136912629
 MeshCollider:
@@ -48573,8 +48903,8 @@ GameObject:
   m_Name: torpedo_docking_station_1_side
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9154119981591047894
 MeshCollider:
@@ -48637,8 +48967,8 @@ GameObject:
   m_Name: Cube_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9162797620794250944
 MeshCollider:
@@ -48684,8 +49014,8 @@ GameObject:
   m_Name: GateSmallFrameC_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &9168934792455289762
 MeshCollider:
