@@ -46602,7 +46602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a03c69ac36e87344f822e8368663fa6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  throwForce: 500
+  throwForce: 450
   grenadePrefab: {fileID: 7807770271035186939, guid: c3d112489acf5da48a27f64d52d48bd5, type: 3}
   throwPoint: {fileID: 1371172424}
   maxGrenadeCount: 5
@@ -46650,7 +46650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7699cae19d224a641abd6bfa423b3dff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 450
+  mouseSensitivity: 400
   playerBody: {fileID: 8727740284427786615}
 --- !u!4 &8727740285367913159
 Transform:

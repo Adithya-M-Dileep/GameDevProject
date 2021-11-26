@@ -23,6 +23,7 @@ public class Timer : MonoBehaviour
     {
         pv = GetComponent<PhotonView>();
         currentTime = startingMinute * 60;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -32,6 +33,7 @@ public class Timer : MonoBehaviour
         if ((currentTime < 0) ||(score.currentScore>=maxScore)||win)
         {
             endPanel.SetActive(true);
+            Cursor.visible = true;
             pv.RPC("GameEnd", RpcTarget.Others);
             _winner.ShowWinner();
         }
