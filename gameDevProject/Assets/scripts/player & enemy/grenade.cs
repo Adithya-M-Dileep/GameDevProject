@@ -27,8 +27,9 @@ public class grenade : MonoBehaviour
         countDown -= Time.deltaTime;
         if(!hasExploded && countDown <= 0)
         {
-            Explode();
+
             hasExploded = true;
+            Explode();
             
         }
     }
@@ -43,6 +44,7 @@ public class grenade : MonoBehaviour
             {
                 damages enemy = nearObject.transform.GetComponent<damages>();
                 enemy.takeDamage(blastDamage);
+
             }
         }
         audioSource.PlayOneShot(explosionClip);

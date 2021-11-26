@@ -9,6 +9,9 @@ public class enemyController : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
+    //timer
+    float timer =0f;
+
     //Patroling
     public Vector3 walkPoint;
     bool walkPointSet;
@@ -17,9 +20,6 @@ public class enemyController : MonoBehaviour
     //Attacking
     public float timeBetweenAttacks;
     bool alreadyAttacked;
-    //public GameObject projectile;
-    //public Vector3 ProjectileOffset;
-    //GameObject prebabProjectile;
 
     //States
     public float sightRange, attackRange;
@@ -52,6 +52,7 @@ public class enemyController : MonoBehaviour
 
     private void Patroling()
     {
+        timer = timer + Time.deltaTime;
         if (!walkPointSet) SearchWalkPoint();
 
         if (walkPointSet)
@@ -60,8 +61,12 @@ public class enemyController : MonoBehaviour
         Vector3 distanceToWalkPoint = transform.position - walkPoint;
 
         //Walkpoint reached
-        if (distanceToWalkPoint.magnitude < 1f)
+        if (distanceToWalkPoint.magnitude < 1f || timer >=5f)
+        {
             walkPointSet = false;
+            timer = 0;
+        }
+            
     }
     private void SearchWalkPoint()
     {

@@ -9,7 +9,6 @@ public class damages : MonoBehaviour
 
     //sound
     public AudioSource audioSource;
-    public AudioClip explosionClip;
     public AudioClip bulletHitClip;
     public void takeDamage(float amount)
     {
@@ -20,7 +19,6 @@ public class damages : MonoBehaviour
 
             audioSource.Play();
             score.currentScore += scoreGained;
-            audioSource.PlayOneShot(explosionClip);
             Destroy(gameObject);
         }
     }

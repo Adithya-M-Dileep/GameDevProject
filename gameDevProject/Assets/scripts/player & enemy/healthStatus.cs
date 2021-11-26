@@ -42,6 +42,8 @@ public class healthStatus : MonoBehaviour
         healthBar.fillAmount = currentHealth / maxHealth;
         if (currentHealth <= 0 && !dead)
         {
+
+            transform.position = spawnpoint.position;
             DeadUi.SetActive(true);
             deathVolume.SetActive(true);
             dead = true;
